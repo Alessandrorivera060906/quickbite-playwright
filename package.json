@@ -1,0 +1,22 @@
+{
+  "name": "quickbite-playwright-classroom",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Reto educativo de automatización de pruebas con Playwright sobre QuickBite v2.5",
+  "scripts": {
+    "verificar": "playwright test tests/00-verificacion.spec.js --workers=1",
+    "demo": "playwright test tests/demo --workers=1",
+    "demo:local": "playwright test tests/demo --headed --workers=1",
+    "demo:pass": "playwright test tests/demo/01-smoke.spec.js tests/demo/02-flujo.spec.js --headed --workers=1",
+    "demo:bug": "playwright test tests/demo/03-descuento-bug.spec.js --headed --workers=1",
+    "reto": "playwright test tests/reto --workers=1",
+    "reto:1": "playwright test tests/reto/01-cantidad-cero.spec.js --workers=1",
+    "reto:2": "playwright test tests/reto/02-direccion.spec.js --workers=1",
+    "reto:3": "playwright test tests/reto/03-regresion-envio.spec.js --workers=1",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.0",
+    "http-server": "14.1.1"
+  }
+}
