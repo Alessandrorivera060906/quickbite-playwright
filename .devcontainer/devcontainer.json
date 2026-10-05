@@ -1,0 +1,12 @@
+{
+  "name": "QuickBite Playwright - ISW1",
+  "image": "mcr.microsoft.com/playwright:v1.62.0-noble",
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright"
+      ]
+    }
+  }
+}
