@@ -8,7 +8,7 @@
     "demo": "playwright test tests/demo --workers=1",
     "demo:local": "playwright test tests/demo --headed --workers=1",
     "demo:pass": "playwright test tests/demo/01-smoke.spec.js tests/demo/02-flujo.spec.js --headed --workers=1",
-    "demo:bug": "playwright test tests/demo/03-descuento-bug.spec.js --headed --workers=1",
+    "demo:bug": "playwright test tests/demo/03-descuento-bug.spec.js --workers=1",
     "reto": "playwright test tests/reto --workers=1",
     "reto:1": "playwright test tests/reto/01-cantidad-cero.spec.js --workers=1",
     "reto:2": "playwright test tests/reto/02-direccion.spec.js --workers=1",
